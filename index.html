@@ -1,51 +1,65 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>seervicios web</title>
+    <title>Servicios Web | Samuel Marin</title>
     <link href="estilos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <nav>
-      <a href="#inicio">inicio</a>
-      <a href="#servicios">servicios</a>
-      <a href="#contacto">contacto</a>
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#contacto">Contacto</a>
     </nav>
-    <h1 id="inicio"> Bienvenido - Potencia tu negocio con una pagina web profesional</h1>
-    <p class="caja1"> Bienvenido a nuestro sitio web de servicios web, soy Samuel marin soy frontend developer web junior y aqui encontraras servicios de diseño web, desarrollo web, optimización SEO y mantenimiento de sitios web y mucho mas.</p>
-    <h3 id="servicios" class="caja2"> ¿Por qué elegirnos?</h3>
-    <ul class="caja2">
-        <li>Experiencia: Contamos con un equipo de profesionales con amplia experiencia en el desarrollo web.</li>
-        <li>Calidad: Nos comprometemos a entregar proyectos de alta calidad que superen las expectativas de nuestros clientes.</li>
-        <li>Atención personalizada: Trabajamos estrechamente con nuestros clientes para entender sus necesidades y ofrecer soluciones a medida.</li>
-        <li>Precios competitivos: Ofrecemos servicios de alta calidad a precios competitivos para garantizar la satisfacción de nuestros clientes.</li>
-    </ul>
-        <h3 class="caja3"> ¿Qué servicios ofrecemos?</h3>
-        <ul class="caja3" style="list-style-type: none;">
-            <li><a href="landing.html">landing page</a></li>
-            <li><a href="webcorporativa.html">web coorporativa</a></li>
-            <li><a href="ecommerce.html">E -commerce</a></li>
-            <li><a href="webpersonalizada.html">web personalizada</a></li>
+
+    <header id="inicio" class="hero">
+        <div class="hero-content">
+            <h1>Bienvenido - Potencia tu negocio con una página web profesional</h1>
+            <p class="caja1">Soy <strong>Samuel Marin</strong>, Frontend Developer Junior. Aquí encontrarás servicios de diseño web, desarrollo web, optimización SEO, mantenimiento de sitios y mucho más.</p>
+        </div>
+    </header>
+
+    <section id="servicios" class="seccion">
+        <h2 class="caja2">¿Por qué elegirnos?</h2>
+        <ul class="lista-razones caja2">
+            <li><strong>Experiencia:</strong> Contamos con un equipo de profesionales con amplia experiencia.</li>
+            <li><strong>Calidad:</strong> Proyectos de alta calidad que superan las expectativas.</li>
+            <li><strong>Atención:</strong> Soluciones a medida entendiendo tus necesidades.</li>
+            <li><strong>Precios:</strong> Alta calidad a precios muy competitivos.</li>
         </ul>
-        <div class="caja4">
-<div class="contenedor">
-        <h1>contacto directo</h1>
-        <form id="forma" name="forma" method="post">
-            <div class="elemento">
-                <label for="nombre">nombre</label><br>
-                <input type="text" id="nombre" name="nombre" placeholder="ingrese su nombre" required="true">
-    </div>
-            <div class="elemento">
-                <label for="gmail">Correo electrónico</label><br>
-                <input type="email" id="gmail" name="gmail" placeholder="ingrese su correo electrónico" required="true">
-            </div>
-            <div class="elemento">
-                <label for="message">Mensaje:</label><br />
-        <textarea id="message" name="message"rows="4" cols="50"required></textarea><br /><br />
-            <div class="elemento">
-                <input type="submit" value="enviar">
-            </div>
-            </div>
+
+        <h2 class="caja3">¿Qué servicios ofrecemos?</h2>
+        <div class="grid-servicios caja3">
+            <a href="landing.html" class="tarjeta-servicio">Landing Page</a>
+            <a href="webcorporativa.html" class="tarjeta-servicio">Web Corporativa</a>
+            <a href="ecommerce.html" class="tarjeta-servicio">E-commerce</a>
+            <a href="webpersonalizada.html" class="tarjeta-servicio">Web Personalizada</a>
+        </div>
+    </section>
+
+    <section id="contacto" class="caja4 seccion fondo-oscuro">
+        <div class="contenedor">
+            <h2>Contacto Directo</h2>
+            <form id="forma" name="forma" method="post">
+                <div class="elemento">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre" required>
+                </div>
+                <div class="elemento">
+                    <label for="gmail">Correo electrónico</label>
+                    <input type="email" id="gmail" name="gmail" placeholder="Ingrese su correo electrónico" required>
+                </div>
+                <div class="elemento">
+                    <label for="message">Mensaje:</label>
+                    <textarea id="message" name="message" rows="4" required placeholder="Escribe tu mensaje aquí..."></textarea>
+                </div>
+                <div class="elemento btn-contenedor">
+                    <input type="submit" value="Enviar Mensaje" class="btn-enviar">
+                </div>
+            </form>
+        </div>
+    </section>
 </body>
 </html>
