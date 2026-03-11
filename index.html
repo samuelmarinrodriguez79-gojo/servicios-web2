@@ -41,17 +41,25 @@
         </div>
     </section>
 
-    <section id="contacto" class="caja4 seccion fondo-oscuro">
+     <section id="contacto" class="caja4 seccion fondo-oscuro">
         <div class="contenedor">
             <h2>Contacto Directo</h2>
             <form id="forma" name="forma" method="post">
-                <div class="elemento">
-                    <label for="nombre">Nombre</label>
-                    <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre" required>
-                </div>
-                <div class="elemento">
-                    <label for="gmail">Correo electrónico</label>
-                    <input type="email" id="gmail" name="gmail" placeholder="Ingrese su correo electrónico" required>
+                <div class="form-row">
+                    <div class="elemento">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre" required>
+                    </div>
+                    <div class="elemento">
+                        <label for="pagina">¿Qué página web desea?</label>
+                        <select id="pagina" name="pagina" required>
+                            <option value="">Seleccione</option>
+                            <option value="landing">Landing Page</option>
+                            <option value="webcorporativa">Web Corporativa</option>
+                            <option value="ecommerce">E-commerce</option>
+                            <option value="webpersonalizada">Web Personalizada</option>
+                        </select>
+                    </div>
                 </div>
                 <div class="elemento">
                     <label for="message">Mensaje:</label>
