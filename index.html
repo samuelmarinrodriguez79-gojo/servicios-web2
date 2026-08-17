@@ -1,3 +1,4 @@
+<!-- 
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -72,5 +73,103 @@
     </section>
 
      
+</body>
+</html>
+-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="pqNEN4zTIXGXFg_PKwoVy-HfStqzFwdW6lGLErYHm60" />
+    <meta name="description" content="Diseño y creación de páginas web profesionales y optimizadas. Ayudo a emprendedores a tener presencia online con sitios rápidos y modernos. ¡Pide tu presupuesto!">
+    <title>Diseño de Páginas Web Profesionales | Samuel Marín</title>
+    <link href="estilos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+
+    <header id="inicio" class="hero">
+        <div class="hero-content">
+            <h1>Bienvenido - Potencia tu negocio con una página web profesional</h1>
+            <p class="caja1">Soy <strong>Samuel Marin</strong>, Frontend Developer Junior. Aquí encontrarás servicios de diseño web, desarrollo web, optimización SEO, mantenimiento de sitios y mucho más.</p>
+        </div>
+    </header>
+
+    <section id="servicios" class="seccion">
+        <h2 class="caja2">¿Por qué elegirnos?</h2>
+        <ul class="lista-razones caja2">
+            <li><strong>Experiencia:</strong> Contamos con un equipo de profesionales con amplia experiencia.</li>
+            <li><strong>Calidad:</strong> Proyectos de alta calidad que superan las expectativas.</li>
+            <li><strong>Atención:</strong> Soluciones a medida entendiendo tus necesidades.</li>
+            <li><strong>Precios:</strong> Alta calidad a precios muy competitivos.</li>
+        </ul>
+
+        <h2 class="caja3">¿Qué servicios ofrecemos?</h2>
+        <div class="grid-servicios caja3">
+            <a href="landing.html" class="tarjeta-servicio">Landing Page</a>
+            <a href="webcorporativa.html" class="tarjeta-servicio">Web Corporativa</a>
+            <a href="ecommerce.html" class="tarjeta-servicio">E-commerce</a>
+            <a href="webpersonalizada.html" class="tarjeta-servicio">Web Personalizada</a>
+        </div>
+    </section>
+
+    <section id="contacto" class="caja4 seccion fondo-oscuro">
+        <div class="contenedor">
+            <h2>Contacto Directo</h2>
+            <form id="forma" name="forma">
+                <div class="form-row">
+                    <div class="elemento">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre" required>
+                    </div>
+                    <div class="elemento">
+                        <label for="pagina">¿Qué página web desea?</label>
+                        <select id="pagina" name="pagina" required>
+                            <option value="">Seleccione</option>
+                            <option value="Landing Page">Landing Page</option>
+                            <option value="Web Corporativa">Web Corporativa</option>
+                            <option value="E-commerce">E-commerce</option>
+                            <option value="Web Personalizada">Web Personalizada</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="elemento">
+                    <label for="message">Mensaje:</label>
+                    <textarea id="message" name="message" rows="4" required placeholder="Escribe tu mensaje aquí..."></textarea>
+                </div>
+                <div class="elemento btn-contenedor">
+                    <button type="submit" class="btn-enviar">Enviar Mensaje</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <script>
+        document.getElementById('forma').addEventListener('submit', function(event) {
+            event.preventDefault(); // Evita que la página se recargue
+
+            const telefono = "584243558262"; // Tu número con código de país
+            const nombre = document.getElementById('nombre').value;
+            const pagina = document.getElementById('pagina').value;
+            const mensaje = document.getElementById('message').value;
+
+            // Formato del mensaje estructurado
+            const textoMensaje = `¡Hola Samuel! Mi nombre es *${nombre}*.\n\n` +
+                                 `*Servicio de interés:* ${pagina}\n` +
+                                 `*Mensaje:* ${mensaje}`;
+
+            // Creación del enlace de WhatsApp
+            const urlWhatsApp = `https://wa.me/${telefono}?text=${encodeURIComponent(textoMensaje)}`;
+
+            // Abrir WhatsApp en una nueva pestaña
+            window.open(urlWhatsApp, '_blank');
+        });
+    </script>
 </body>
 </html>
